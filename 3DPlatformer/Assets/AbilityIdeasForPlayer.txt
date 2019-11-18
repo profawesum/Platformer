@@ -1,0 +1,14 @@
+Ideas for robot abilities:
+
+
+Eco from Jak and Daxter:
+	-Blue: move faster for a set time
+	-Red: Deal more damage for a set time
+	-Green: Health pack
+	-Yellow: Throw Fireballs
+
+Glide
+Double Jump
+Attack
+
+Shooting?
