@@ -1,14 +1,28 @@
-Ideas for robot abilities:
+TODO:
+
+Destructible containers that contain gems
+Main big collectible
+Enemies
+Levels
+More Player Abilities
+Update Player/Enemy model
+Level Interactables
+
+
+Ideas for player abilities:
 
 
 Eco from Jak and Daxter:
-	-Blue: move faster for a set time
+	-Blue: move faster for a set time - Done
 	-Red: Deal more damage for a set time
 	-Green: Health pack
 	-Yellow: Throw Fireballs
 
-Glide
+
+Attack - Done
+Glide - Done
+
 Double Jump
-Attack
+
 
 Shooting?
