@@ -308,7 +308,6 @@ namespace Gamekit3D
                 {
                     m_VerticalSpeed = 0f;
                 }
-                Debug.Log(m_VerticalSpeed);
 
                 //if Ellen is moving down in the air, then if the jump button is
                 //pushed then reduce the gravity value so she can glide
