@@ -205,6 +205,8 @@ namespace Gamekit3D
             TimeoutToIdle();
 
             m_PreviouslyGrounded = m_IsGrounded;
+
+       
         }
 
         // Called at the start of FixedUpdate to record the current state of the base layer of the animator.
@@ -306,9 +308,20 @@ namespace Gamekit3D
                 {
                     m_VerticalSpeed = 0f;
                 }
-                
-                // If Ellen is airborne, apply gravity.
-                m_VerticalSpeed -= gravity * Time.deltaTime;
+                Debug.Log(m_VerticalSpeed);
+
+                //if Ellen is moving down in the air, then if the jump button is
+                //pushed then reduce the gravity value so she can glide
+                if (m_VerticalSpeed <= 0 && m_Input.JumpInput)
+                {
+                    m_VerticalSpeed -= 2.5f * Time.deltaTime;
+                }
+                //otherwise make it so the gravity value is set to default
+                else
+                {
+                    // If Ellen is airborne, apply gravity.
+                    m_VerticalSpeed -= gravity * Time.deltaTime;
+                }
             }
         }
 
