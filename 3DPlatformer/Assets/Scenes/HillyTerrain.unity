@@ -3362,7 +3362,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: b7c146d79b5d0df4bbddbb87906b0bc6, type: 2}
+      objectReference: {fileID: 9100000, guid: 365deca8337a3dd47882b1fbf25d9e3f, type: 2}
     - target: {fileID: -6057140222963153312, guid: 40f9812386fa0324781770ac32a31bcc,
         type: 3}
       propertyPath: m_ApplyRootMotion
@@ -3372,6 +3372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CullingMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 40f9812386fa0324781770ac32a31bcc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40f9812386fa0324781770ac32a31bcc, type: 3}
@@ -31646,6 +31651,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 887749058}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1013268161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 40f9812386fa0324781770ac32a31bcc,
+    type: 3}
+  m_PrefabInstance: {fileID: 422753251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1013268163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013268161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebad5300c1eb79642a58f957a7ac802f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotAnim: {fileID: 0}
 --- !u!4 &1014897557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: ee8ae0950acf52e4f944cd2900700c61,

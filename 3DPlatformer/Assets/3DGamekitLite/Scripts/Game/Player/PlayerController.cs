@@ -14,8 +14,6 @@ namespace Gamekit3D
 
         public bool respawning { get { return m_Respawning; } }
 
-
-        public Animator RobotAnim;
         public float maxForwardSpeed = 8f;        // How fast Ellen can run.
         public float gravity = 20f;               // How fast Ellen accelerates downwards when airborne.
         public float jumpSpeed = 10f;             // How fast Ellen takes off when jumping.
@@ -147,7 +145,6 @@ namespace Gamekit3D
         // Called automatically by Unity when the script first exists in the scene.
         void Awake()
         {
-            RobotAnim = GetComponentInChildren<Animator>();
             m_Input = GetComponent<PlayerInput>();
             m_Animator = GetComponent<Animator>();
             m_CharCtrl = GetComponent<CharacterController>();
@@ -277,7 +274,7 @@ namespace Gamekit3D
             // Set the animator parameter to control what animation is being played.
             m_Animator.SetFloat(m_HashForwardSpeed, m_ForwardSpeed);
 
-            RobotAnim.SetTrigger("Moving");
+           // RobotAnim.SetTrigger("Moving");
         }
 
         // Called each physics step.
