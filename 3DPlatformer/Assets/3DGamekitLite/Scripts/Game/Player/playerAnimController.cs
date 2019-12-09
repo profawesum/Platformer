@@ -33,6 +33,10 @@ public class playerAnimController : MonoBehaviour
             robotAnim.SetTrigger("Moving");
             timer = 0;
         }
+        if (Input.GetButton("Fire1")) {
+            robotAnim.SetTrigger("Attack");
+            timer = 0;
+        }
 
         timer += Time.deltaTime;
 
